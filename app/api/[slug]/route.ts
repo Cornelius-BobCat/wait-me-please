@@ -59,10 +59,10 @@ export async function GET(request: Request, context: any) {
   await incrementPingTable();
   const { params } = context;
   const { slug } = params;
-  const regex = /^(\d{1,2})([a-z]|[a-z]\d{3})(\d{1,2})$/;
+  const regex = /^(\d{1,2})([a-z]+|[a-z]{1}\d{3})(\d{1,2})$/;
 
   const matches = slug.match(regex);
-
+  console.log(matches);
   if (!matches || matches.length < 4) {
     return NextResponse.json({ result: "Invalid tag !" }, { status: 400 });
   }
@@ -149,22 +149,32 @@ export async function GET(request: Request, context: any) {
   // check EROOR
   if (/^e\d{3}$/.test(letters)) {
     try {
-      setTimeout(() => {
-        switch (letters) {
-          case "e404":
-            return NextResponse.json({ status: 500 });
-          case "e400":
-            return NextResponse.json({ status: 400 });
-          case "e200":
-            return NextResponse.json({ status: 200 });
-          case "e300":
-            return NextResponse.json({ status: 300 });
-          case "e500":
-            return NextResponse.json({ status: 500 });
-          default:
-            return NextResponse.json({ result: "error" }, { status: 500 });
-        }
-      }, timeout * 1000);
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          let jsonResponse;
+          switch (letters) {
+            case "e404":
+              jsonResponse = { status: 404 };
+              break;
+            case "e400":
+              jsonResponse = { status: 400 };
+              break;
+            case "e200":
+              jsonResponse = { status: 200 };
+              break;
+            case "e300":
+              jsonResponse = { status: 300 };
+              break;
+            case "e500":
+              jsonResponse = { status: 500 };
+              break;
+            default:
+              jsonResponse = { status: 404 };
+              break;
+          }
+          resolve(NextResponse.json(jsonResponse));
+        }, timeout * 1000);
+      });
     } catch (e) {
       return NextResponse.json({ result: "error" }, { status: 500 });
     }
