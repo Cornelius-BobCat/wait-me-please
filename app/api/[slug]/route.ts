@@ -55,7 +55,7 @@ export async function GET(request: Request, context: any) {
   await incrementPingTable();
   const { params } = context;
   const { slug } = params;
-  const regex = /^(\d{1,2})([a-z]+)(\d{1,2})$/;
+  const regex = /^(\d{1,2})([a-z]|[a-z]\d{3})(\d{1,2})$/;
 
   const matches = slug.match(regex);
 
@@ -76,7 +76,17 @@ export async function GET(request: Request, context: any) {
     );
   }
 
-  const validLetters = ["persona", "product", "time", "id"];
+  const validLetters = [
+    "persona",
+    "product",
+    "time",
+    "id",
+    "e404",
+    "e400",
+    "e200",
+    "e300",
+    "e500",
+  ];
 
   // Check if the letters are valid
   if (!validLetters.includes(letters)) {
@@ -127,6 +137,38 @@ export async function GET(request: Request, context: any) {
     try {
       const selectedTs = await selectedTime(number, timeout);
       return NextResponse.json({ result: selectedTs }, { status: 200 });
+    } catch (e) {
+      return NextResponse.json({ result: "error" }, { status: 500 });
+    }
+  }
+
+  // check EROOR
+  if (/^e\d{3}$/.test(letters)) {
+    try {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          switch (letters) {
+            case "e404":
+              resolve(NextResponse.json({ status: 404 }));
+              break;
+            case "e400":
+              resolve(NextResponse.json({ status: 400 }));
+              break;
+            case "e200":
+              resolve(NextResponse.json({ status: 200 }));
+              break;
+            case "e300":
+              resolve(NextResponse.json({ status: 300 }));
+              break;
+            case "e500":
+              resolve(NextResponse.json({ status: 500 }));
+              break;
+            default:
+              resolve(NextResponse.json({ result: "error" }, { status: 500 }));
+              break;
+          }
+        }, timeout * 1000);
+      });
     } catch (e) {
       return NextResponse.json({ result: "error" }, { status: 500 });
     }
