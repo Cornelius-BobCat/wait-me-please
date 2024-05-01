@@ -19,7 +19,7 @@ export default async function Header() {
               href="#"
               className="hover:border-b border-dotted border-gray-500 text-sm group flex flex-row"
             >
-              Github
+              Documentation
               <span className="display group-hover:block">
                 <ArrowUpRight size={10} />
               </span>
