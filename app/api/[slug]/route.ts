@@ -149,35 +149,36 @@ export async function GET(request: Request, context: any) {
   // check EROOR
   if (/^e\d{3}$/.test(letters)) {
     try {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          let jsonResponse;
-          switch (letters) {
-            case "e404":
-              jsonResponse = { status: 404 };
-              break;
-            case "e400":
-              jsonResponse = { status: 400 };
-              break;
-            case "e200":
-              jsonResponse = { status: 200 };
-              break;
-            case "e300":
-              jsonResponse = { status: 300 };
-              break;
-            case "e500":
-              jsonResponse = { status: 500 };
-              break;
-            default:
-              jsonResponse = { status: 404 };
-              break;
-          }
-          resolve(NextResponse.json(jsonResponse));
-        }, timeout * 1000);
-      });
+      await new Promise((resolve) => setTimeout(resolve, timeout * 1000));
+
+      let jsonResponse;
+      switch (letters) {
+        case "e404":
+          jsonResponse = { status: 404 };
+          break;
+        case "e400":
+          jsonResponse = { status: 400 };
+          break;
+        case "e200":
+          jsonResponse = { status: 200 };
+          break;
+        case "e300":
+          jsonResponse = { status: 300 };
+          break;
+        case "e500":
+          jsonResponse = { status: 500 };
+          break;
+        default:
+          jsonResponse = { status: 404 };
+          break;
+      }
+
+      return NextResponse.json(jsonResponse);
     } catch (e) {
       return NextResponse.json({ result: "error" }, { status: 500 });
     }
+  } else {
+    return NextResponse.json({ result: "error" }, { status: 400 });
   }
 
   // oups
