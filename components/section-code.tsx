@@ -11,6 +11,7 @@ const SectionCode = () => {
             <div>persona</div>
             <div>product</div>
             <div>time</div>
+            <div>error</div>
           </div>
         </div>
         <div className="w-1/3 flex justify-center items-center m-2 pb-10 border-b border-b-slate-500">
