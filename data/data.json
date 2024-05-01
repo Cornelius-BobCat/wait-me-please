@@ -1,0 +1,279 @@
+{
+  "personna" :{
+    "prenom":["Emma", "Noah", "Olivia", "Liam", "Ava", "William", "Sophia", "James", "Isabella", "Oliver", "Amelia", "Benjamin", "Mia", "Elijah", "Charlotte", "Lucas", "Abigail", "Mason", "Harper", "Logan", "Evelyn", "Alexander", "Grace", "Ethan", "Luna", "Jacob", "Chloe", "Daniel", "Lily", "Michael", "Avery", "Matthew", "Sofia", "Jackson", "Madison", "Logan", "Ella", "David", "Aria", "Joseph", "Scarlett", "Samuel", "Nova", "Dylan", "Zoey", "Liam", "Penelope", "Gabriel", "Riley", "Carter"],
+    "nom":["Smith", "Johnson", "Williams", "Brown", "Jones", "Miller", "Davis", "Garcia", "Rodriguez", "Martinez", "Hernandez", "Lopez", "Gonzalez", "Wilson", "Anderson", "Thomas", "Taylor", "Moore", "Jackson", "Martin", "Lee", "Perez", "Thompson", "White", "Harris", "Sanchez", "Clark", "Ramirez", "Lewis", "Robinson", "Walker", "Young", "Allen", "King", "Wright", "Scott", "Torres", "Nguyen", "Hill", "Flores", "Green", "Adams", "Nelson", "Baker", "Hall", "Rivera", "Campbell", "Mitchell", "Carter", "Roberts"],
+    "age":[12, 42, 23, 4, 55, 56, 67, 18, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    "numero":["123", "456", "789", "1011", "1315", "1619", "2023", "2427", "2831", "3235", "3640", "4044", "4448", "4852", "5256", "5660", "6064", "6468", "6872", "7276", "7680", "8084", "8488", "8892", "9296", "96100", "100104", "104108", "108112", "112116", "116120", "120124", "124128", "128132", "132136", "136140", "140144", "144148", "148152", "152156", "156160", "160164", "164168", "168172", "172176", "176180", "180184", "184188", "188192"],
+    "indicatif":["TER", "BIS"],
+    "rue":[
+        "Rue de la Gare",
+        "Avenue des Étoiles",
+        "Boulevard du Printemps",
+        "Rue de l'Espérance",
+        "Avenue des Violettes",
+        "Rue des Coquelicots",
+        "Boulevard de la Liberté",
+        "Avenue des Cerisiers",
+        "Rue de la Fontaine",
+        "Boulevard des Alouettes"
+      ],
+      "cp_france":[
+        "75001", "69002", "31000", "59000", "33000",
+        "13001", "44000", "67000", "75008", "35000",
+        "54000", "06000", "67000", "76000", "38000",
+        "68000", "34000", "25000", "57000", "80000"
+      ],
+      "cp_eu": [
+        "90210", "10001", "60601", "94102", "33101",
+        "77001", "20001", "02108", "30301", "19101",
+        "37201", "97201", "84101", "63101", "77001",
+        "43201", "27701", "02108", "80901", "46801"
+      ],
+      "phone":[
+        "+33 6 12 34 56 78",
+        "+33 6 98 76 54 32",
+        "+33 7 23 45 67 89",
+        "+33 7 89 65 43 21",
+        "+33 6 54 32 10 98",
+        "+33 7 12 34 56 78",
+        "+33 6 78 90 12 34",
+        "+33 7 34 56 78 90",
+        "+33 6 56 78 90 12",
+        "+33 7 89 01 23 45",
+        "+33 6 21 43 65 87",
+        "+33 7 43 65 87 09",
+        "+33 6 76 54 32 10",
+        "+33 7 54 32 10 98",
+        "+33 6 90 12 34 56",
+        "+33 7 21 43 65 87",
+        "+33 6 43 65 87 09",
+        "+33 7 65 43 21 98",
+        "+33 6 87 09 12 34",
+        "+33 7 32 10 98 76",
+        "+33 6 01 23 45 67",
+        "+33 7 76 54 32 10",
+        "+33 6 32 10 98 76",
+        "+33 7 12 34 56 78",
+        "+33 6 54 76 54 32",
+        "+33 7 09 87 65 43",
+        "+33 6 21 43 65 87",
+        "+33 7 87 09 12 34",
+        "+33 6 65 87 09 12",
+        "+33 7 54 32 10 98",
+        "+33 6 01 23 45 67",
+        "+33 7 76 54 32 10",
+        "+33 6 32 10 98 76",
+        "+33 7 12 34 56 78",
+        "+33 6 54 76 54 32",
+        "+33 7 09 87 65 43",
+        "+33 6 21 43 65 87",
+        "+33 7 87 09 12 34",
+        "+33 6 65 87 09 12",
+        "+33 7 54 32 10 98",
+        "+33 6 01 23 45 67",
+        "+33 7 76 54 32 10",
+        "+33 6 32 10 98 76",
+        "+33 7 12 34 56 78",
+        "+33 6 54 76 54 32",
+        "+33 7 09 87 65 43",
+        "+33 6 21 43 65 87",
+        "+33 7 87 09 12 34",
+        "+33 6 65 87 09 12"
+      ],
+      "astro":[
+        "Bélier",
+        "Taureau",
+        "Gémeaux",
+        "Cancer",
+        "Lion",
+        "Vierge",
+        "Balance",
+        "Scorpion",
+        "Sagittaire",
+        "Capricorne",
+        "Verseau",
+        "Poissons"
+      ],
+      "T":[
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "taille":[
+        1.30, 1.31, 1.32, 1.33, 1.34, 1.35, 1.36, 1.37, 1.38, 1.39,
+        1.40, 1.41, 1.42, 1.43, 1.44, 1.45, 1.46, 1.47, 1.48, 1.49,
+        1.50, 1.51, 1.52, 1.53, 1.54, 1.55, 1.56, 1.57, 1.58, 1.59,
+        1.60, 1.61, 1.62, 1.63, 1.64, 1.65, 1.66, 1.67, 1.68, 1.69,
+        1.70, 1.71, 1.72, 1.73, 1.74, 1.75, 1.76, 1.77, 1.78, 1.79,
+        1.80, 1.81, 1.82, 1.83, 1.84, 1.85, 1.86, 1.87, 1.88, 1.89,
+        1.90, 1.91, 1.92, 1.93, 1.94, 1.95, 1.96, 1.97, 1.98, 1.99,
+        2.00, 2.01, 2.02, 2.03, 2.04, 2.05, 2.06, 2.07, 2.08, 2.09
+      ]
+  },
+      "products":[
+        {
+          "id": 1,
+          "nom": "T-shirt basique",
+          "categorie": "Vêtements",
+          "description": "T-shirt unisexe 100% coton",
+          "prix_ht": 15.99,
+          "tva": 20
+        },
+        {
+          "id": 2,
+          "nom": "Jeans slim",
+          "categorie": "Vêtements",
+          "description": "Jeans pour homme ou femme, coupe slim",
+          "prix_ht": 39.99,
+          "tva": 20
+        },
+        {
+          "id": 3,
+          "nom": "Chaussures de course",
+          "categorie": "Chaussures",
+          "description": "Chaussures de course légères avec amorti",
+          "prix_ht": 69.99,
+          "tva": 20
+        },
+        {
+          "id": 4,
+          "nom": "Montre-bracelet",
+          "categorie": "Accessoires",
+          "description": "Montre-bracelet analogique en acier inoxydable",
+          "prix_ht": 89.99,
+          "tva": 20
+        },
+        {
+          "id": 5,
+          "nom": "Sac à dos",
+          "categorie": "Accessoires",
+          "description": "Sac à dos unisexe avec plusieurs poches",
+          "prix_ht": 49.99,
+          "tva": 20
+        },
+        {
+          "id": 6,
+          "nom": "Smartphone",
+          "categorie": "Électronique",
+          "description": "Smartphone avec écran OLED et caméra haute résolution",
+          "prix_ht": 799.99,
+          "tva": 20
+        },
+        {
+          "id": 7,
+          "nom": "Casque audio sans fil",
+          "categorie": "Électronique",
+          "description": "Casque audio Bluetooth avec suppression de bruit",
+          "prix_ht": 149.99,
+          "tva": 20
+        },
+        {
+          "id": 8,
+          "nom": "Enceinte Bluetooth",
+          "categorie": "Électronique",
+          "description": "Enceinte portable étanche avec son haute définition",
+          "prix_ht": 79.99,
+          "tva": 20
+        },
+        {
+          "id": 9,
+          "nom": "Cafetière programmable",
+          "categorie": "Électroménager",
+          "description": "Cafetière avec fonction programmable et écran LCD",
+          "prix_ht": 49.99,
+          "tva": 20
+        },
+        {
+          "id": 10,
+          "nom": "Aspirateur sans sac",
+          "categorie": "Électroménager",
+          "description": "Aspirateur cyclonique sans sac avec filtration HEPA",
+          "prix_ht": 129.99,
+          "tva": 20
+        },
+        {
+          "id": 11,
+          "nom": "Batterie externe",
+          "categorie": "Accessoires",
+          "description": "Batterie externe portable de 10 000 mAh",
+          "prix_ht": 29.99,
+          "tva": 20
+        },
+        {
+          "id": 12,
+          "nom": "Lampe de bureau LED",
+          "categorie": "Accessoires",
+          "description": "Lampe de bureau à LED avec variateur d'intensité",
+          "prix_ht": 34.99,
+          "tva": 20
+        },
+        {
+          "id": 13,
+          "nom": "Livre de cuisine",
+          "categorie": "Livres",
+          "description": "Livre de recettes de cuisine traditionnelle",
+          "prix_ht": 19.99,
+          "tva": 5.5
+        },
+        {
+          "id": 14,
+          "nom": "Roman policier",
+          "categorie": "Livres",
+          "description": "Roman policier à suspense",
+          "prix_ht": 14.99,
+          "tva": 5.5
+        },
+        {
+          "id": 15,
+          "nom": "Jeu de société",
+          "categorie": "Jouets",
+          "description": "Jeu de société pour toute la famille",
+          "prix_ht": 24.99,
+          "tva": 20
+        },
+        {
+          "id": 16,
+          "nom": "Peluche",
+          "categorie": "Jouets",
+          "description": "Peluche douce et câline pour enfants",
+          "prix_ht": 9.99,
+          "tva": 20
+        },
+        {
+          "id": 17,
+          "nom": "Balle de football",
+          "categorie": "Sports",
+          "description": "Balle de football en cuir véritable",
+          "prix_ht": 24.99,
+          "tva": 20
+        },
+        {
+          "id": 18,
+          "nom": "Raquette de tennis",
+          "categorie": "Sports",
+          "description": "Raquette de tennis professionnelle",
+          "prix_ht": 79.99,
+          "tva": 20
+        },
+        {
+          "id": 19,
+          "nom": "Tapis de yoga",
+          "categorie": "Sports",
+          "description": "Tapis de yoga antidérapant et confortable",
+          "prix_ht": 29.99,
+          "tva": 20
+        },
+        {
+          "id": 20,
+          "nom": "Serviette de plage",
+          "categorie": "Accessoires",
+          "description": "Serviette de plage colorée et absorbante",
+          "prix_ht": 19.99,
+          "tva": 20
+        }
+      ]
+      
+}
