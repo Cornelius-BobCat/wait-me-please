@@ -18,6 +18,7 @@ export default async function Header() {
             <Link
               href="#"
               className="hover:border-b border-dotted border-gray-500 text-sm group flex flex-row"
+              target="_blank"
             >
               Documentation
               <span className="display group-hover:block">
