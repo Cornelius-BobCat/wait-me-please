@@ -31,7 +31,7 @@ export default function Hero() {
         </Highlight>
         <p className="mt-6 leading-7 sm:leading-8 font-extralight">
           <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-lg font-medium">
-            https://jsuisunemerde.com/api/
+            https://wait-me-please.vercel.app/api/
             <span className="text-purple-300">{currentText}</span>
             <span className="animate-ping">|</span>
           </code>
