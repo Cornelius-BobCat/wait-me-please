@@ -1,9 +1,7 @@
-// rateLimitUtil.js
-
 const NodeCache = require("node-cache");
 const requestCache = new NodeCache();
-const IP_TTL = 1; // Durée de conservation des adresses IP dans le cache (en secondes)
-const MAX_REQUESTS_PER_SECOND = 10; // Nombre maximal de requêtes autorisées par seconde
+const IP_TTL = 1;
+const MAX_REQUESTS_PER_SECOND = 10;
 
 function incrementRequestCount(ip: any) {
   let count = requestCache.get(ip) || 0;
