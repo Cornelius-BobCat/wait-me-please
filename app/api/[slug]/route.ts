@@ -31,6 +31,27 @@ import { incrementPingTable } from "@/utils/incrementation";
  * @returns A NextResponse object with the result of the request.
  */
 export async function GET(request: Request, context: any) {
+  const { incrementRequestCount, isRateLimited } = require("@/utils/cache.ts");
+  const clientIP =
+    request.headers.get("x-real-ip") ||
+    request.headers.get("x-forwarded-for") ||
+    request.headers.get("cf-connecting-ip") ||
+    request.headers.get("remote-addr") ||
+    request.headers.get("fastly-client-ip") ||
+    request.headers.get("x-cluster-client-ip") ||
+    request.headers.get("x-forwarded-host") ||
+    request.headers.get("x-forwarded-server") ||
+    request.headers.get("x-host") ||
+    request.headers.get("x-originating-ip") ||
+    request.headers.get("x-proxy-user-ip");
+
+  if (isRateLimited(clientIP)) {
+    return NextResponse.json(
+      { result: "Ma,ny requests ! limited 10/sec" },
+      { status: 429 }
+    );
+  }
+  incrementRequestCount(clientIP);
   await incrementPingTable();
   const { params } = context;
   const { slug } = params;
