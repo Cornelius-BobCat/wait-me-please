@@ -21,6 +21,17 @@ This is an open source project. I need your help for development and updating ap
 
 ---
 
+## QuickStart
+
+- [test code 404 delay 3 sec](https://waitmeplease.vercel.app/api/1e4043)
+- [test code 200 delay 1 sec ](https://waitmeplease.vercel.app/api/1e2001)
+
+- [test 2 product delay 3 sec ](https://waitmeplease.vercel.app/api/2product3)
+- [test 1 persona delay 1 sec ](https://waitmeplease.vercel.app/api/1persona1)
+- [test 5 time delay 7 sec ](https://waitmeplease.vercel.app/api/7time7)
+
+---
+
 ## Functioning
 
 The API is designed to be simple and intuitive. Here's how to use it:
