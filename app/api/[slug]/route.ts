@@ -17,11 +17,15 @@ import { incrementPingTable } from "@/utils/incrementation";
  * For example, a valid slug could be: 5ps10
  * This would generate 5 personas with a 10-second delay.
  * The letters correspond to the following:
- * ps - personas
- * pr - products
- * ts - timestamps
- * id - unique IDs
- * ra - random array
+ * - persona: generate personas
+ * - product: generate products
+ * - time: generate a timestamp
+ * - id: generate a UUID
+ * - e404: return a 404 status code
+ * - e400: return a 400 status code
+ * - e200: return a 200 status code
+ * - e300: return a 300 status code
+ * - e500: return a 500 status code
  * The function then parses the slug to extract the number, letters, and timeout values.
  * It then validates the values and calls the appropriate function to generate the items.
  * The generated items are returned as a JSON response.
