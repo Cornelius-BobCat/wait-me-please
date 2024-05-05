@@ -6,7 +6,7 @@ This is an open source project. I need your help for development and updating ap
 
 <center>
 
-# ↘ [WAITMEPLEASE](www.waitmeplease.vercel.app) ↙
+# ↘ [WAITMEPLEASE](https://waitmeplease.vercel.app) ↙
 
 ## </center>
 
