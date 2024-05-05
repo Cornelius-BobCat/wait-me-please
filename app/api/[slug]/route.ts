@@ -35,6 +35,15 @@ import { incrementPingTable } from "@/utils/incrementation";
  * @returns A NextResponse object with the result of the request.
  */
 export async function GET(request: Request, context: any) {
+  const fileContents = await fetch("data/counter.json");
+  const data = await fileContents.json();
+
+  // Incrémenter la valeur
+  if (data.hasOwnProperty("valeur")) {
+    data.valeur++;
+  } else {
+    data.valeur = 1; // Si la clé n'existe pas, initialiser à 1
+  }
   const { incrementRequestCount, isRateLimited } = require("@/utils/cache.ts");
   const clientIP =
     request.headers.get("x-real-ip") ||

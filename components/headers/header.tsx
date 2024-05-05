@@ -16,7 +16,7 @@ export default async function Header() {
           </Link>
           <div className="pt-1 flex flex-row space-x-5  max-lg:hidden ">
             <Link
-              href="https://github.com/Cornelius-BobCat/wait-me-please"
+              href="https://github.com/Cornelius-BobCat/wait-me-please/blob/main/README.md"
               className="hover:border-b border-dotted border-gray-500 text-sm group flex flex-row"
               target="_blank"
             >
